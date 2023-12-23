@@ -1,0 +1,31 @@
+.Input {
+    position: relative;
+    width: 100%;
+}
+
+.Input__input {
+    display: block;
+    width: 100%;
+    height: 56px;
+    padding: 8px 12px;
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 12px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.Input__input:hover, .Input__input:focus {
+    border: 2px solid rgb(51, 10, 165);
+}
+
+.Input__input:focus {
+    outline: none;
+}
+
+.Input__input:focus::placeholder {
+    color: black;
+}
+
+.Input__input--error, .Input__input--error:focus {
+    border: 2px solid rgb(255, 70, 70);
+}

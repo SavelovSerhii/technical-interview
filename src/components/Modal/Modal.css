@@ -1,0 +1,57 @@
+.Modal {
+    position: absolute;
+    top: 10%;
+    left: -50px;
+    width: 600px;
+    padding: 50px;
+    background-color: white;
+    border: 5px solid rgb(51, 10, 165);
+    border-radius: 32px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+
+.Modal--closed {
+    left: -600px;
+}
+
+.Modal__list {
+    padding: 0;
+    list-style: none;
+}
+
+.Modal__item {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.Modal__image {
+    width: 80px;
+    height: 80px;
+}
+
+.Modal__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+}
+
+.Modal__button {
+    width: 50%;
+    height: 32px;
+    border: 2px solid rgb(51, 10, 165);
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.Modal__button:hover {
+    border: 2px solid rgb(212, 212, 212);
+    background-color: rgb(51, 10, 165);
+    color: rgb(212, 212, 212);
+}
